@@ -3,4 +3,9 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.post('users', 'User/UserController.store')
+/**
+ * Users
+ */
+Route.group(() => {
+  Route.post('user/create', 'User/UserController.store')
+})
