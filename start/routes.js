@@ -16,3 +16,10 @@ Route.group(() => {
 Route.group(() => {
   Route.post('session/store', 'Session/SessionController.store')
 })
+
+/**
+ * ForgotPassword
+ */
+Route.group(() => {
+  Route.post('password', 'ForgotPassword/ForgotPasswordController.store')
+})
