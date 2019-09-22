@@ -7,5 +7,12 @@ const Route = use('Route')
  * Users
  */
 Route.group(() => {
-  Route.post('user/create', 'User/UserController.store')
+  Route.post('user/store', 'User/UserController.store')
+})
+
+/**
+ * Session
+ */
+Route.group(() => {
+  Route.post('session/store', 'Session/SessionController.store')
 })
