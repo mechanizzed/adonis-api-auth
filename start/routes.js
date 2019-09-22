@@ -22,4 +22,5 @@ Route.group(() => {
  */
 Route.group(() => {
   Route.post('password', 'ForgotPassword/ForgotPasswordController.store')
+  Route.put('password/update', 'ForgotPassword/ForgotPasswordController.update')
 })
